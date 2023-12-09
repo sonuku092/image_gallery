@@ -1,0 +1,86 @@
+.imgtxt{
+    font-family: var(--font-pattaya);
+    font-size: x-large;
+}
+
+#navbarSupportedContent{
+    width:430px !important;
+    font-family: var(montserrat);
+}
+
+li{
+    font-weight: 650;
+}
+
+h2{
+    font-family: var(montserrat);
+}
+
+.hero{
+ width: 100%;
+ height: 200px;
+ background: url('../../public/media/hero.jpeg'),lightgray 50% / cover no-repeat;
+}
+
+/* .col{
+    height: 150px;
+} */
+
+.image{
+    width: max-content;
+    height: max-content;
+    padding: 4px;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+.im{
+    max-height: 380px;
+    width: auto;
+    border-radius: 5px;
+    border:2px solid #f1ecec;
+}
+
+.row{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.profile{
+    width: 48px;
+    margin-right: 5px;
+}
+
+.skl{
+    width: 380px;
+    height: 440px;
+}
+
+
+
+.bg1{
+    background-color: #3b5998;
+}
+
+.bg2{
+    background-color: #55acee;
+}
+.bg3{
+    background-color: #dd4b39;
+}
+.bg4{
+    background-color: #ac2bac;
+}
+.bg5{
+    background-color: #0082ca;
+}
+.bg6{
+    background-color: #333333;
+}
+.bg7{
+    background-color: rgba(0, 0, 0, 0.2);
+}
