@@ -3,29 +3,29 @@ import "./Navbar.css";
 import { ImageContext } from "../App";
 
 const Hero = () => {
-  const [searchValue, setSearchValue] = useState('');
+  // const [searchValue, setSearchValue] = useState('');
 
-  const { fetchData } = useContext(ImageContext);
+  // const { fetchData } = useContext(ImageContext);
 
-  const handleInputChange = (e) => {
-    setSearchValue(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setSearchValue(e.target.value);
+  // };
 
-  const handleButtonSearch = () => {
-    fetchData(
-      `search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
-    )
-    setSearchValue("");
-  };
+  // const handleButtonSearch = () => {
+  //   fetchData(
+  //     `search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
+  //   )
+  //   setSearchValue("");
+  // };
 
-  const handleEnterDown = e => {
-    if(e.key ==='Enter'){
-      fetchData(
-        `search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
-      )
-      setSearchValue("");
-    }
-  }
+  // const handleEnterDown = e => {
+  //   if(e.key ==='Enter'){
+  //     fetchData(
+  //       `search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
+  //     )
+  //     setSearchValue("");
+  //   }
+  // }
 
   return (
     <div className="hero">
@@ -43,9 +43,9 @@ const Hero = () => {
           type="search"
           placeholder="Search Images, categories, wallpapers"
           aria-label="Search"
-          value={searchValue}
-          onChange={handleInputChange}
-          onKeyDown={handleEnterDown}
+          // value={searchValue}
+          // onChange={handleInputChange}
+          // onKeyDown={handleEnterDown}
         />
       </form>
     </div>
