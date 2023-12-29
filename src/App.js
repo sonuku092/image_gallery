@@ -9,7 +9,7 @@ import useAxios from "./useAxios";
 export const ImageContext = createContext();
 
 function App() {
-  const [searchImage, setSearchImage] = useState('Office');
+  const [searchImage, setSearchImage] = useState('Offices');
   const { responce, isLoading, error, fetchData } = useAxios(
     `search/photos?page=1&query=${searchImage}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
   );
